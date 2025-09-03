@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <title>我的技术站</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./main.iife.js"></script>
     
     <script>
       main.initColorScheme("system",true)
     </script>
   <meta content="Halo 2.20.21" name="generator"><!-- plugin-comment-widget start -->
+<script src="./comment-widget.iife.js"></script>
 <link rel="stylesheet" href="./style(1).css">
 <!-- plugin-comment-widget end -->
 <!-- PluginSearchWidget start -->
+<script src="./search-widget.iife.js" async=""></script>
 <link rel="stylesheet" href="./style(2).css">
 <!-- PluginSearchWidget end -->
 </head>
@@ -51,7 +54,7 @@
         <li x-data="dropdown" class="relative cursor-pointer transition-all" @mouseenter="open()" @mouseleave="close()">
           <div>
             <div class="size-5 text-gray-600 hover:text-blue-600 dark:text-slate-100">
-              <img class="size-5 rounded-full" src="./index_files/default-avatar.svg" alt="曹飞">
+              <img class="size-5 rounded-full" src="./default-avatar.svg" alt="曹飞">
             </div>
             <ul @mouseenter="open()" @mouseleave="close()" x-show="show" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-10 mt-2 w-40 divide-y divide-gray-50 overflow-hidden rounded bg-white shadow dark:divide-slate-600 dark:bg-slate-700" style="display: none;">
               <li class="flex w-full items-center text-left text-sm hover:bg-gray-50 dark:hover:bg-slate-600">
@@ -95,7 +98,7 @@
     
     
       <section>
-  <div class="bg-cover bg-center bg-no-repeat h-96" style="background-image: url(/themes/theme-earth/assets/images/default-background-2023-10-12.jpeg);">
+  <div class="bg-cover bg-center bg-no-repeat h-96" style="background-image: url(./default-background-2023-10-12.jpeg);">
     
       
       
@@ -139,7 +142,7 @@
     </div>
     <div class="mt-4 flex items-center justify-start gap-2">
       <a href="http://127.0.0.1:8090/authors/iamcaofei" title="曹飞">
-        <img src="./index_files/default-avatar.svg" title="曹飞" alt="曹飞" class="size-8 rounded-full border drop-shadow-sm dark:border-slate-700">
+        <img src="./default-avatar.svg" title="曹飞" alt="曹飞" class="size-8 rounded-full border drop-shadow-sm dark:border-slate-700">
       </a>
       <a href="http://127.0.0.1:8090/authors/iamcaofei" title="曹飞" class="text-sm font-medium text-gray-900 hover:text-gray-600 dark:text-slate-100 dark:hover:text-slate-200">曹飞</a>
       <span class="text-sm tabular-nums text-gray-600 dark:text-slate-300">发布于 2025-09-03</span>
