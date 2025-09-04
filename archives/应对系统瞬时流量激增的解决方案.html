@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0166)http://127.0.0.1:8090/archives/%E5%BA%94%E5%AF%B9%E7%B3%BB%E7%BB%9F%E7%9E%AC%E6%97%B6%E6%B5%81%E9%87%8F%E6%BF%80%E5%A2%9E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88 -->
 <html lang="en" class="light">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -74,29 +73,6 @@
                                  src="../assets/icons/default-avatar.svg"
                                  alt="曹飞">
                         </div>
-                        <ul @mouseenter="open()" @mouseleave="close()" x-show="show"
-                            x-transition:enter="transition ease-out duration-100"
-                            x-transition:enter-start="transform opacity-0 scale-95"
-                            x-transition:enter-end="transform opacity-100 scale-100"
-                            x-transition:leave="transition ease-in duration-75"
-                            x-transition:leave-start="transform opacity-100 scale-100"
-                            x-transition:leave-end="transform opacity-0 scale-95"
-                            class="absolute right-0 z-10 mt-2 w-40 divide-y divide-gray-50 overflow-hidden rounded bg-white shadow dark:divide-slate-600 dark:bg-slate-700"
-                            style="display: none;">
-                            <li class="flex w-full items-center text-left text-sm hover:bg-gray-50 dark:hover:bg-slate-600">
-                                <a class="size-full truncate px-4 py-2 text-gray-600 hover:text-blue-600 dark:text-slate-50 dark:hover:text-gray-300"
-                                   href="http://127.0.0.1:8090/console" target="_blank">
-                                    控制台
-                                </a>
-                            </li>
-                            <li class="flex w-full items-center text-left text-sm hover:bg-gray-50 dark:hover:bg-slate-600">
-                                <a class="size-full truncate px-4 py-2 text-gray-600 hover:text-blue-600 dark:text-slate-50 dark:hover:text-gray-300"
-                                   href="http://127.0.0.1:8090/logout">
-                                    退出登录
-                                </a>
-                            </li>
-
-                        </ul>
                     </div>
                 </li>
             </ul>
@@ -150,7 +126,7 @@
                 <div class="flex w-full items-center justify-start gap-2">
 
                     <div class="flex flex-col gap-0.5">
-                        <a href="http://127.0.0.1:8090/authors/iamcaofei" title="曹飞"
+                        <a href="/authors/iamcaofei" title="曹飞"
                            class="text-sm font-semibold text-gray-900 hover:text-gray-600 dark:text-slate-100 dark:hover:text-slate-200">曹飞</a>
                         <div class="flex items-center gap-2 text-xs font-light text-gray-600 dark:text-slate-100">
                             <span>发布于 2025-09-03</span>
@@ -160,15 +136,6 @@
                     </div>
                 </div>
                 <div class="flex flex-row items-center gap-1.5 self-end">
-                    <div class="flex items-center justify-between" id="edit-button"
-                         x-data="uiPermission(&#39;iamcaofei&#39;,&#39;system:posts:manage&#39;)">
-                        <template x-if="shouldDisplay"></template>
-                        <a href="http://127.0.0.1:8090/console/posts/editor?name=40ce02db-9cf6-42f8-b677-9811361492c0&amp;returnToView=true"
-                           class="inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md border border-gray-200 bg-white px-4 py-1 text-sm font-medium leading-6 text-gray-600 shadow-sm hover:bg-gray-50 focus:shadow-none focus:outline-none dark:border-slate-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white">
-                            <span class="i-tabler-edit text-lg transition-all group-hover:-translate-x-1"></span>
-                            <span>编辑</span>
-                        </a>
-                    </div>
                     <div @click="handleUpvote(name)" class="group inline-flex cursor-pointer items-center rounded-lg">
                         <div class="inline-flex items-center justify-center rounded-full p-2 transition-all group-hover:bg-gray-100 dark:group-hover:bg-slate-700">
                             <div class="i-tabler-heart text-lg text-gray-600 group-hover:text-red-600 dark:text-slate-500"
@@ -485,7 +452,7 @@
                     标签
                 </h2>
                 <a class="group inline-flex items-center gap-2 text-sm text-gray-600 transition-all hover:text-gray-900 dark:text-slate-400 dark:hover:text-slate-300"
-                   href="http://127.0.0.1:8090/tags">
+                   href="/tags">
                     <span>更多</span>
                     <span class="i-tabler-chevron-right -translate-x-1 text-lg transition-all group-hover:translate-x-0"></span>
                 </a>

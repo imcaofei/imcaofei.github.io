@@ -2,21 +2,23 @@
 <html lang="en" class="light">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-    <title>我的技术站</title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <script src="./utils/main.iife.js"></script>
+    <title>作者：曹飞 - 我的技术站</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <script src="../utils/main.iife.js"></script>
+
     <script>
         main.initColorScheme("system", true)
     </script>
     <meta content="Halo 2.20.21" name="generator"><!-- plugin-comment-widget start -->
-    <script src="./utils/comment-widget.iife.js"></script>
-    <link rel="stylesheet" href="./assets/styles/style(1).css">
+    <script src="../utils/comment-widget.iife.js"></script>
+    <link rel="stylesheet" href="../assets/styles/style(1).css">
     <!-- plugin-comment-widget end -->
     <!-- PluginSearchWidget start -->
-    <script src="./utils/search-widget.iife.js" async=""></script>
-    <link rel="stylesheet" href="./assets/styles/style(2).css">
+    <script src="../utils/search-widget.iife.js" async=""></script>
+    <link rel="stylesheet" href="../assets/styles/style(2).css">
     <!-- PluginSearchWidget end -->
 </head>
 <body class="bg-slate-50 dark:bg-slate-900">
@@ -64,7 +66,8 @@
                     @mouseleave="close()">
                     <div>
                         <div class="size-5 text-gray-600 hover:text-blue-600 dark:text-slate-100">
-                            <img class="size-5 rounded-full" src="./assets/icons/default-avatar.svg" alt="曹飞">
+                            <img class="size-5 rounded-full" src="../assets/icons/default-avatar.svg"
+                                 alt="曹飞">
                         </div>
                     </div>
                 </li>
@@ -104,40 +107,23 @@
 
 
 <section>
-    <div class="bg-cover bg-center bg-no-repeat h-96"
-         style="background-image: url(/themes/theme-earth/assets/images/default-background-2023-10-12.jpeg);">
 
 
-        <div class="mx-auto flex h-full max-w-7xl flex-col items-center justify-center gap-3 px-4 py-6 lg:px-6">
-            <span class="text-5xl"
-                  style="color: rgb(255, 255, 255); --darkreader-inline-color: var(--darkreader-text-ffffff, #e8e6e3);"
-                  data-darkreader-inline-color="">我的技术站</span>
-            <span class="text-sm font-light opacity-50"
-                  style="color: rgb(255, 255, 255); --darkreader-inline-color: var(--darkreader-text-ffffff, #e8e6e3);"
-                  data-darkreader-inline-color=""></span>
-        </div>
-
-
+    <div class="relative">
+        <div class="before:z-1 relative h-96 bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/40"
+             style="background-image: url(&#39;/themes/theme-earth/assets/images/default-background-2023-10-12.jpeg&#39;)"></div>
+        <header class="pattern-header-text absolute top-1/2 mx-auto flex w-full flex-col items-center justify-center gap-3">
+            <h1 class="text-5xl text-white">作者：曹飞</h1>
+        </header>
     </div>
 
 </section>
 
+
 <section class="mx-auto mt-6 flex max-w-7xl gap-6 px-4 lg:px-6">
     <div class="z-0 min-w-0 flex-1 shrink">
 
-        <ul id="filters" class="flex flex-wrap gap-2">
-            <li>
-                <a href="/"
-                   class="inline-flex cursor-pointer items-center rounded px-3 py-1 font-medium text-gray-500 transition-all hover:bg-gray-100 hover:text-gray-900 hover:shadow-sm dark:text-slate-200 dark:hover:bg-slate-700 dark:hover:text-slate-50 !text-gray-900 !bg-gray-100 dark:!bg-slate-700 dark:!text-slate-50">
-                    <span class="truncate text-base"> 全部 </span>
-                </a>
-            </li>
-
-
-        </ul>
-
-
-        <div id="post-list" class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 ">
+        <div id="post-list" class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 ">
 
             <div class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-md ring-black transition-all duration-500 hover:shadow-lg dark:bg-slate-800 dark:ring-slate-700 hover:-translate-y-1 hover:ring-2 ">
 
@@ -152,7 +138,7 @@
                     </div>
                     <div class="mt-4 flex items-center justify-start gap-2">
                         <a href="/authors/iamcaofei" title="曹飞">
-                            <img src="./assets/icons/default-avatar.svg" title="曹飞" alt="曹飞"
+                            <img src="../assets/icons/default-avatar.svg" title="曹飞" alt="曹飞"
                                  class="size-8 rounded-full border drop-shadow-sm dark:border-slate-700">
                         </a>
                         <a href="/authors/iamcaofei" title="曹飞"
@@ -189,7 +175,7 @@
                             </div>
                             <div class="inline-flex items-center gap-1 text-xs text-gray-600 dark:text-slate-500">
                                 <span class="i-tabler-eye"></span>
-                                <span class="tabular-nums">3</span>
+                                <span class="tabular-nums">6</span>
                             </div>
                         </div>
                     </li>
@@ -259,17 +245,14 @@
 
 
 <button type="button" id="btn-scroll-to-top" aria-label="回到顶部"
-        class="fixed bottom-5 right-5 flex items-center justify-center rounded-full bg-white p-3 opacity-0 shadow transition-all duration-300 hover:opacity-70 hover:shadow-lg dark:bg-slate-600 lg:bottom-10 lg:right-10">
+        class="fixed bottom-5 right-5 flex items-center justify-center rounded-full bg-white p-3 opacity-0 shadow transition-all duration-300 hover:opacity-70 hover:shadow-lg dark:bg-slate-600 lg:bottom-10 lg:right-10"
+        style="opacity: 0;">
     <span class="i-tabler-chevron-up text-2xl text-gray-600 dark:text-slate-200"></span>
 </button>
 
 
 <search-modal>
-    <template shadowrootmode="open">
-        <style class="darkreader darkreader--invert"
-               media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"] > svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container {
-            filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
-        }</style><!---->
+    <template shadowrootmode="open"><!---->
         <div class="modal__wrapper" style="display:none;">
             <div class="modal__layer"></div>
             <div data-overlayscrollbars-initialize="" class="modal__content shadow-xl bg-modal"
@@ -280,7 +263,7 @@
                 <div class="" data-overlayscrollbars-viewport="scrollbarHidden overflowXHidden overflowYHidden"
                      tabindex="-1"
                      style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; top: 0px; right: auto; left: 0px; width: calc(100% + 0px); padding: 0px;">
-                    <!--?lit$522702501$-->
+                    <!--?lit$650934435$-->
                 </div>
                 <div class="os-scrollbar os-scrollbar-horizontal os-theme-dark os-scrollbar-auto-hide os-scrollbar-auto-hide-hidden os-scrollbar-handle-interactive os-scrollbar-cornerless os-scrollbar-unusable"
                      style="--os-viewport-percent: 0; --os-scroll-direction: 0;">
