@@ -2,7 +2,6 @@
 <html lang="en" class="light">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <title>应对系统瞬时流量激增的解决方案 - 我的技术站</title>
@@ -31,7 +30,6 @@
         <div class="flex h-full items-center gap-6">
             <div class="mr-2 h-full">
                 <a href="/" class="inline-flex h-full items-center">
-
                     <span id="site-title"
                           class="text-lg font-medium text-gray-900 dark:text-slate-100">我的技术站</span>
                 </a>
@@ -41,7 +39,6 @@
                     @mouseenter="open()" @mouseleave="close()">
                     <a class="text-gray-600 hover:text-blue-600 dark:text-slate-50 dark:hover:text-gray-300"
                        href="/">首页</a>
-
                 </li>
             </ul>
         </div>
@@ -107,17 +104,10 @@
         </div>
     </div>
 </header>
-
-
 <section>
-
-
 </section>
-
-
 <section class="mx-auto mt-6 flex max-w-7xl gap-6 px-4 lg:px-6">
     <div class="z-0 min-w-0 flex-1 shrink">
-
         <div x-data="upvote(&#39;post&#39;,&#39;content.halo.run&#39;,&#39;posts&#39;)"
              class="rounded-xl bg-white p-4 dark:bg-slate-800">
             <div class="flex flex-col items-center justify-between gap-2 sm:flex-row"
@@ -145,8 +135,6 @@
                         <span class="text-sm text-gray-600 group-hover:text-red-600 dark:text-slate-500"
                               data-upvote-post-name="7926a6a6-ef8e-4287-85f2-14ba7487b003">0</span>
                     </div>
-
-
                     <div class="group inline-flex cursor-pointer items-center gap-0.5 rounded-lg"
                          @click="shareModal = true"
                          x-data="share([{&quot;id&quot;:&quot;wechat&quot;},{&quot;id&quot;:&quot;x&quot;},{&quot;id&quot;:&quot;telegram&quot;},{&quot;id&quot;:&quot;facebook&quot;},{&quot;id&quot;:&quot;qq&quot;},{&quot;id&quot;:&quot;qzone&quot;},{&quot;id&quot;:&quot;weibo&quot;},{&quot;id&quot;:&quot;douban&quot;},{&quot;id&quot;:&quot;native&quot;}],[&quot;wechat&quot;,&quot;x&quot;,&quot;telegram&quot;,&quot;facebook&quot;,&quot;qq&quot;,&quot;qzone&quot;,&quot;weibo&quot;,&quot;douban&quot;,&quot;native&quot;])">
@@ -154,13 +142,11 @@
                             <div class="i-tabler-share text-lg text-gray-600 group-hover:text-green-500 dark:text-slate-500"></div>
                         </div>
                         <template x-teleport="body" data-teleport-template="true"></template>
-
                     </div>
                 </div>
             </div>
             <h1 class="my-3 text-2xl font-medium dark:text-slate-50">应对系统瞬时流量激增的解决方案</h1>
             <div class="flex gap-2">
-
             </div>
             <article id="content" class="!max-w-none break-words tailwind-typography"><p>
                 处理系统瞬时流量激增（例如：秒杀活动、热点新闻、明星爆款、大促整点开抢）是一个系统性工程，需要从<strong>应用层、服务层、数据层、架构层</strong>等多个维度进行综合治理。其核心思想是：<strong>“分而治之”和“层层缓冲”</strong>。
@@ -345,22 +331,13 @@
             </article>
             <div class="mt-10 flex flex-col sm:flex-row sm:justify-between">
                 <div class="flex justify-start">
-
                 </div>
                 <div class="flex justify-end">
-
                 </div>
             </div>
-
-
         </div>
-
     </div>
-
-
     <aside class="z-0 hidden w-72 flex-none flex-col gap-6 md:flex">
-
-
         <div class="toc-container sticky top-20 z-[5] w-full cursor-pointer rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-slate-800">
             <h2 class="inline-flex items-center gap-2 text-base dark:text-slate-50">
                 <span class="i-tabler-list text-lg"></span>
@@ -391,8 +368,6 @@
                 </ol>
             </div>
         </div>
-
-
         <div class="w-full overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-slate-800">
             <h2 class="inline-flex items-center gap-2 text-base dark:text-slate-50">
                 <span class="i-tabler-stairs-up text-lg text-red-600 dark:text-red-700"></span>
@@ -418,8 +393,6 @@
                 </ul>
             </div>
         </div>
-
-
         <div class="w-full overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-slate-800">
             <h2 class="inline-flex items-center gap-2 text-base dark:text-slate-50">
                 <span class="i-tabler-category text-lg"></span>
@@ -431,8 +404,6 @@
                 </ul>
             </div>
         </div>
-
-
         <div class="w-full overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-slate-800">
             <div class="flex items-center justify-between">
                 <h2 class="inline-flex items-center gap-2 text-base dark:text-slate-50">
@@ -446,28 +417,19 @@
                 </a>
             </div>
             <div class="mt-2 flex flex-wrap gap-2">
-
             </div>
         </div>
-
-
     </aside>
-
-
 </section>
 <footer class="mt-10 bg-white py-8 dark:bg-slate-800">
     <div class="mx-auto max-w-7xl px-4 sm:flex sm:items-center sm:justify-between lg:px-6">
         <a href="/" class="mb-4 flex items-center justify-center sm:mb-0 sm:justify-start">
-
             <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-slate-50">我的技术站</span>
         </a>
-
 
     </div>
     <hr class="my-6 border-gray-100 dark:border-slate-700 sm:mx-auto lg:my-8">
     <div class="space-y-1">
-    
-    
     <span class="mx-auto block max-w-7xl px-4 text-center text-sm text-gray-500 dark:text-slate-300 lg:px-6">
       ©
       2025
@@ -479,8 +441,6 @@
     </span>
     </div>
 </footer>
-
-
 <script>
     main.generateToc();
 </script>
@@ -615,8 +575,6 @@
         </div>
     </div>
 </div>
-
-
 <search-modal>
     <template shadowrootmode="open"><!---->
         <div class="modal__wrapper" style="display:none;">
@@ -652,7 +610,5 @@
         style="opacity: 0;">
     <span class="i-tabler-chevron-up text-2xl text-gray-600 dark:text-slate-200"></span>
 </button>
-
-
 </body>
 </html>
