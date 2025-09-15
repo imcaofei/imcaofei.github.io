@@ -19,15 +19,15 @@
   <meta name="author" content="Fei Cao">
   <meta name="keywords" content="">
   
-    <meta name="description" content="问题核心分析Excel导出导致内存飙升和Full GC的本质原因是：*在数据处理和生成的过程中，在内存中同时驻留了大量的对象（通常是导出数据的DTO&#x2F;Entity、Excel单元格对象等），这些对象的总大小超过了JVM堆空间的容量，导致频繁GC，最终引发Stop-The-World的FullGC，甚至OOM。*  一、 问题排查方向 (How to Diagnose)当线上出现这个问题时">
+    <meta name="description" content="问题核心分析Excel导出导致内存飙升和Full GC的本质原因是：在数据处理和生成的过程中，在内存中同时驻留了大量的对象（通常是导出数据的DTO&#x2F;Entity、Excel单元格对象等），这些对象的总大小超过了JVM堆空间的容量，导致频繁GC，最终引发Stop-The-World的FullGC，甚至OOM。  一、 问题排查方向 (How to Diagnose)当线上出现这个问题时，不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Excel导出内存优化方案">
 <meta property="og:url" content="https://imcaofei.github.io/2025/09/05/Excel%E5%AF%BC%E5%87%BA%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="FeiCao.io">
-<meta property="og:description" content="问题核心分析Excel导出导致内存飙升和Full GC的本质原因是：*在数据处理和生成的过程中，在内存中同时驻留了大量的对象（通常是导出数据的DTO&#x2F;Entity、Excel单元格对象等），这些对象的总大小超过了JVM堆空间的容量，导致频繁GC，最终引发Stop-The-World的FullGC，甚至OOM。*  一、 问题排查方向 (How to Diagnose)当线上出现这个问题时">
+<meta property="og:description" content="问题核心分析Excel导出导致内存飙升和Full GC的本质原因是：在数据处理和生成的过程中，在内存中同时驻留了大量的对象（通常是导出数据的DTO&#x2F;Entity、Excel单元格对象等），这些对象的总大小超过了JVM堆空间的容量，导致频繁GC，最终引发Stop-The-World的FullGC，甚至OOM。  一、 问题排查方向 (How to Diagnose)当线上出现这个问题时，不">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-09-05T07:52:16.000Z">
-<meta property="article:modified_time" content="2025-09-15T07:57:46.256Z">
+<meta property="article:modified_time" content="2025-09-15T08:00:53.850Z">
 <meta property="article:author" content="Fei Cao">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -263,7 +263,7 @@
             
               <div class="markdown-body">
                 
-                <h3 id="问题核心分析"><a href="#问题核心分析" class="headerlink" title="问题核心分析"></a>问题核心分析</h3><p>Excel导出导致内存飙升和Full GC的本质原因是：*<br><em>在数据处理和生成的过程中，在内存中同时驻留了大量的对象（通常是导出数据的DTO&#x2F;Entity、Excel单元格对象等），这些对象的总大小超过了JVM堆空间的容量，导致频繁GC，最终引发Stop-The-World的Full<br>GC，甚至OOM。</em>*</p>
+                <h3 id="问题核心分析"><a href="#问题核心分析" class="headerlink" title="问题核心分析"></a>问题核心分析</h3><p>Excel导出导致内存飙升和Full GC的本质原因是：<strong>在数据处理和生成的过程中，在内存中同时驻留了大量的对象（通常是导出数据的DTO&#x2F;Entity、Excel单元格对象等），这些对象的总大小超过了JVM堆空间的容量，导致频繁GC，最终引发Stop-The-World的Full<br>GC，甚至OOM。</strong></p>
 <hr>
 <h3 id="一、-问题排查方向-How-to-Diagnose"><a href="#一、-问题排查方向-How-to-Diagnose" class="headerlink" title="一、 问题排查方向 (How to Diagnose)"></a>一、 问题排查方向 (How to Diagnose)</h3><p>当线上出现这个问题时，不要盲目优化，首先要定位瓶颈。我会采用以下步骤进行排查：</p>
 <ol>
