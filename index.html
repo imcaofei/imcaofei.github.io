@@ -248,6 +248,39 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/2025/09/05/Excel%E5%AF%BC%E5%87%BA%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/" target="_self">
+          Excel导出内存优化方案
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/09/05/Excel%E5%AF%BC%E5%87%BA%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/" target="_self">
+        <div>
+          问题核心分析Excel导出导致内存飙升和Full GC的本质原因是：*在数据处理和生成的过程中，在内存中同时驻留了大量的对象（通常是导出数据的DTO&#x2F;Entity、Excel单元格对象等），这些对象的总大小超过了JVM堆空间的容量，导致频繁GC，最终引发Stop-The-World的FullGC，甚至OOM。*  一、 问题排查方向 (How to Diagnose)当线上出现这个问题时
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-09-05 15:52" pubdate>
+              2025-09-05
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/2025/09/03/%E5%BA%94%E5%AF%B9%E7%B3%BB%E7%BB%9F%E7%9E%AC%E6%97%B6%E6%B5%81%E9%87%8F%E6%BF%80%E5%A2%9E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" target="_self">
           应对系统瞬时流量激增的解决方案
         </a>
